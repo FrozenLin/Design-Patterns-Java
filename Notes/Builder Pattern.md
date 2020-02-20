@@ -165,3 +165,5 @@ The builder pattern can be used when we want to convert one text format to anoth
 ##### When to use
 
 If you need to make a complex object that involves various steps in the construction process, and at the same time, the products need to be immutable, the builder pattern is a good choice.
+
+Also, consider a builder when faced with many constructor parameters. (Effective Java 3rd, Item 2) Telescoping constructor pattern does not scale well and JavaBeans pattern can't guarantee the object contruction is an atomic operation.
